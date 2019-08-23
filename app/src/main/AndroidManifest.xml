@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.ucsd.cse110.team1_personalbest">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permisssion.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.ActivityOfFriendActivity"></activity>
+        <activity android:name=".Activities.MessageActivity" />
+        <activity android:name=".Activities.AddFriendActivity" />
+        <activity
+            android:name=".Activities.FriendsListActivity"
+            android:label="@string/title_activity_friends_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.CountStepActivity" />
+        <activity android:name=".SetGoalOptionActivity" />
+        <activity android:name=".SetNewGoalActivity" />
+        <activity android:name=".CustomGoalActivity" />
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".Activities.MainActivityGraph" />
+    </application>
+
+</manifest>
